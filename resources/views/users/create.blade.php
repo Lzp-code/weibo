@@ -8,9 +8,10 @@
                 <h5>注册</h5>
             </div>
             <div class="card-body">
+                @include('shared._errors')
                 <form method="POST" action="{{ route('users.store') }}">
 
-                    
+
                     {{csrf_field()}}
                     {{--上面这段代码转换为 HTML 如下所示：--}}
                     {{--<input type="hidden" name="_token" value="fhcxqT67dNowMoWsAHGGPJOAWJn8x5R5ctSwZrAq">--}}
