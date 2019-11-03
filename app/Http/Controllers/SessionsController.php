@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class SessionsController extends Controller
 {
@@ -27,6 +27,12 @@ class SessionsController extends Controller
         }
 
         return;
+    }
+
+    public function destory(){
+        Auth::logout();
+        session()->flash('success','您已成功退出！');
+        return redirect('login');
     }
 
 
