@@ -65,7 +65,7 @@ class UsersController extends Controller
     protected function sendEmailConfirmationTo($user){
         $view = 'emails.confirm';
         $data = compact('user');
-        $from = '763752090@qq.com';
+//        $from = '763752090@qq.com';
         $name = 'admin';
         $to = $user->email;
         $subject = "感谢注册 Weibo 应用！请确认你的邮箱。";
