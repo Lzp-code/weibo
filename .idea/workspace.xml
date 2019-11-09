@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9c994d1f-e358-426b-94c7-bfa55b6e9d7c" name="默认的" comment="" />
+=======
+    <list default="true" id="9c994d1f-e358-426b-94c7-bfa55b6e9d7c" name="默认的" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
+    </list>
+>>>>>>> account-activation-password-resets
     <ignored path="weibo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,8 +32,13 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-11.535714">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+=======
+            <state vertical-scroll-proportion="-14.928572">
+              <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+>>>>>>> account-activation-password-resets
               <folding />
             </state>
           </provider>
@@ -36,7 +48,11 @@
         <entry file="file://$PROJECT_DIR$/app/Models/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+=======
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+>>>>>>> account-activation-password-resets
               <folding>
                 <element signature="e#30#76#0#PHP" expanded="true" />
                 <marker date="1573146102523" expanded="true" signature="970:975" placeholder="..." />
@@ -49,7 +65,11 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SessionsController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+=======
+              <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+>>>>>>> account-activation-password-resets
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -60,11 +80,24 @@
       <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-10.928572">
               <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
                 <element signature="e#2047#2227#0#PHP" expanded="false" />
+=======
+            <state vertical-scroll-proportion="0.35042736">
+              <caret line="67" column="21" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+                <element signature="e#455#606#0#PHP" expanded="false" />
+                <element signature="e#612#680#0#PHP" expanded="false" />
+                <element signature="e#686#776#0#PHP" expanded="false" />
+                <element signature="e#2400#2532#0#PHP" expanded="false" />
+                <element signature="e#2539#3074#0#PHP" expanded="false" />
+                <element signature="e#3080#3260#0#PHP" expanded="false" />
+>>>>>>> account-activation-password-resets
               </folding>
             </state>
           </provider>
@@ -73,18 +106,31 @@
       <file leaf-file-name="email.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-27.142857">
               <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+=======
+            <state vertical-scroll-proportion="-7.464286">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+>>>>>>> account-activation-password-resets
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="reset.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.95360196">
               <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+=======
+      <file leaf-file-name="reset.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.178571">
+              <caret line="31" column="102" selection-start-line="31" selection-start-column="102" selection-end-line="31" selection-end-column="102" />
+>>>>>>> account-activation-password-resets
               <folding />
             </state>
           </provider>
@@ -93,8 +139,13 @@
       <file leaf-file-name="ResetPasswordController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-17.642857">
               <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+=======
+            <state vertical-scroll-proportion="-20.357143">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+>>>>>>> account-activation-password-resets
               <folding>
                 <element signature="e#45#81#0#PHP" expanded="true" />
               </folding>
@@ -131,13 +182,9 @@
         <option value="$PROJECT_DIR$/resources/views/shared/_messages.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/default.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/sessions/create.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/users/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
@@ -147,6 +194,17 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_11_05_123809_add_is_admin_to_users_table.php" />
         <option value="$PROJECT_DIR$/app/Policies/UserPolicy.php" />
         <option value="$PROJECT_DIR$/resources/views/users/_user.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_05_153932_add_activation_to_users_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/emails/confirm.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/sessions/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel-2019-11-07.log" />
+        <option value="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" />
+        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
@@ -360,7 +418,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+=======
               <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weibo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+>>>>>>> account-activation-password-resets
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,6 +797,16 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_05_153932_add_activation_to_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18627451">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> account-activation-password-resets
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8652658">
@@ -727,7 +824,12 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SessionsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+=======
+          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
@@ -737,11 +839,30 @@
     <entry file="file://$PROJECT_DIR$/app/Models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding>
+            <element signature="e#30#76#0#PHP" expanded="true" />
+>>>>>>> account-activation-password-resets
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
           <folding>
             <element signature="e#30#76#0#PHP" expanded="true" />
             <marker date="1573146102523" expanded="true" signature="970:975" placeholder="..." />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/confirm.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="62" />
+          <folding />
+>>>>>>> account-activation-password-resets
         </state>
       </provider>
     </entry>
@@ -755,8 +876,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-11.535714">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="-14.928572">
+          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+>>>>>>> account-activation-password-resets
           <folding />
         </state>
       </provider>
@@ -785,10 +911,33 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.642857">
           <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.464286">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.178571">
+          <caret line="31" column="102" selection-start-line="31" selection-start-column="102" selection-end-line="31" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.357143">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+>>>>>>> account-activation-password-resets
           <folding>
             <element signature="e#45#81#0#PHP" expanded="true" />
           </folding>
@@ -805,11 +954,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-10.928572">
           <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
             <element signature="e#2047#2227#0#PHP" expanded="false" />
+=======
+        <state vertical-scroll-proportion="0.35042736">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#455#606#0#PHP" expanded="false" />
+            <element signature="e#612#680#0#PHP" expanded="false" />
+            <element signature="e#686#776#0#PHP" expanded="false" />
+            <element signature="e#2400#2532#0#PHP" expanded="false" />
+            <element signature="e#2539#3074#0#PHP" expanded="false" />
+            <element signature="e#3080#3260#0#PHP" expanded="false" />
+>>>>>>> account-activation-password-resets
           </folding>
         </state>
       </provider>
