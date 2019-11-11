@@ -12,10 +12,12 @@ class UsersController extends Controller
 
     public function __construct(){
 
+        //构建函数时，要求必须是登录用户才能操作本控制器的方程，除了except
         $this->middleware('auth',[
             'except'=>['show','create','store','index','confirmEmail']
         ]);
 
+        //只允许未登录用户访问的方程
         $this->middleware('guest',[
             'only'=>['create']
         ]);
@@ -23,8 +25,9 @@ class UsersController extends Controller
     }
 
     public function index(){
-//        $users = User::all();
-        $users = User::paginate(2);
+//        $users = User::all();     //获得所有用户
+        $users = User::paginate(2);     //获得用户列表，每页两个
+//        compact('users')——创建一个键名为users，键值为$users的变量，赋值给'users.index界面
         return view('users.index',compact('users'));
     }
 
@@ -33,7 +36,7 @@ class UsersController extends Controller
     }
 
     public function show(User $user){
-
+        //User $user是获取所要查看的人的信息，User是自动加载User_Model
         $statuses = $user->statuses()
             ->orderBy('created_at','desc')
             ->paginate(10);
