@@ -14,6 +14,7 @@ class FollowersController extends Controller
     }
 
     public function store(User $user){
+        //检查权限
         $this->authorize('follow',$user);
 
         if(!Auth::user()->isFollowing($user->id)){

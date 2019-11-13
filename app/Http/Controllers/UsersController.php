@@ -35,6 +35,8 @@ class UsersController extends Controller
         return view('users.create');
     }
 
+
+
     public function show(User $user){
         //User $user是获取所要查看的人的信息，User是自动加载User_Model
         $statuses = $user->statuses()
