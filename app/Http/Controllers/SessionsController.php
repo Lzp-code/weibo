@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Auth;
 
 class SessionsController extends Controller
 {
@@ -25,8 +25,10 @@ class SessionsController extends Controller
             'password' => 'required'
         ]);
 
+        //attempt方法会接收一个数组作为参数，在数据库中寻找相应数据，$request->has('remember')——用户在页面上有点击‘记住我’
         if (Auth::attempt($credentials, $request->has('remember'))) {
 
+            //Auth::user()方法获取当前登录用户的信息
             if(Auth::user()->activated){
                 session()->flash('success', '欢迎回来！');
 //            return route('users.show', Auth::user());

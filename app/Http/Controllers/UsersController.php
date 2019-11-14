@@ -102,12 +102,13 @@ class UsersController extends Controller
 
 
 
-    public function edit(User $user){
+    public function edit(User $user){   //用Laravel的隐性路由模型绑定，直接读取对应id的用户实例
         $this->authorize('update',$user);
         return view('users.edit',compact('user'));
     }
 
 
+    //update参数接收两个参数，一个是自动解析用户ID对应的用户实例，一个是用户表单提交的数据
     public function update(User $user,Request $request){
         $this->authorize('update',$user);
         $this->validate($request,[
@@ -125,6 +126,7 @@ class UsersController extends Controller
 
        session()->flash('success','个人资料更新成功！');
 
+        //$user是User模型的对象实例，route方法自动获取User模型的主键，以下代码相当于redirect()->route('users.show', [$user->id]);
         return redirect()->route('users.show',$user);
     }
 
