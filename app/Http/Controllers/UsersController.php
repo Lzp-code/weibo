@@ -13,6 +13,8 @@ class UsersController extends Controller
     public function __construct(){
 
         //构建函数时，要求必须是登录用户才能操作本控制器的方程，除了except
+
+
         $this->middleware('auth',[
             'except'=>['show','create','store','index','confirmEmail']
         ]);
@@ -21,6 +23,10 @@ class UsersController extends Controller
         $this->middleware('guest',[
             'only'=>['create']
         ]);
+        //这时候如果登录的用户访问要访问登录页面（即这个只允许未登录用户访问的create方法），
+        //会被跳转到laravel默认的/home页面，因我们并没有此页面，所以会报错 404 找不到页面。
+        //我们需要修改一下中间件app/Http/Middleware/RedirectIfAuthenticated.php里面的redirect（）方法
+        //并加上提醒
 
     }
 
@@ -103,6 +109,8 @@ class UsersController extends Controller
 
 
     public function edit(User $user){   //用Laravel的隐性路由模型绑定，直接读取对应id的用户实例
+    //authorize方法里面的第一个参数update指的是app/Policies/UserPolicy文件
+    //里面的update方法，$user是app/Policies/UserPolicy文件里面的update方法的第二个参数（框架会默认加载第一个参数：即当前登录的用户）
         $this->authorize('update',$user);
         return view('users.edit',compact('user'));
     }
@@ -110,6 +118,8 @@ class UsersController extends Controller
 
     //update参数接收两个参数，一个是自动解析用户ID对应的用户实例，一个是用户表单提交的数据
     public function update(User $user,Request $request){
+        //authorize方法里面的第一个参数update指的是app/Policies/UserPolicy文件
+        //里面的update方法，$user是app/Policies/UserPolicy文件里面的update方法的第二个参数（框架会默认加载第一个参数：即当前登录的用户）
         $this->authorize('update',$user);
         $this->validate($request,[
             'name'=>'required|max:50',
