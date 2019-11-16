@@ -141,6 +141,8 @@ class UsersController extends Controller
     }
 
     public function destroy(User $user){
+        //authorize方法里面的第一个参数destroy指的是app/Policies/UserPolicy文件
+        //里面的destroy方法，$user是app/Policies/UserPolicy文件里面的destroy方法的第二个参数（框架会默认加载第一个参数：即当前登录的用户）
         $this->authorize('destroy',$user);
         $user->delete();
         session()->flash('success','成功删除用户！');
