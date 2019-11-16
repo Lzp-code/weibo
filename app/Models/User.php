@@ -59,6 +59,12 @@ class User extends Authenticatable
            $user->activation_token  = Str::random(10); //在模型被创建前给用户生成激活令牌（给用户数据库字段一个activation_token的值）
         });
 
+
+        //比如在控制器调用save的方法之前可以触发一个updating方法，给$user的name设置为AAAAA，则执行save时可以把$user的name设置为AAAAA：
+//        static::updating(function($user){
+//            $user->name  = 'AAAAA'; //在模型被创建前给用户生成激活令牌（给用户数据库字段一个activation_token的值）
+//        });
+
     }
 
 

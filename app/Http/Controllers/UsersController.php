@@ -45,6 +45,8 @@ class UsersController extends Controller
 
     public function show(User $user){
         //User $user是获取所要查看的人的信息，User是自动加载User_Model
+
+        //$user->statuses()是让$user调用User的model里面的statuses方法，statuses方法里面再去调用Status方法，从而找出用户所属的微博
         $statuses = $user->statuses()
             ->orderBy('created_at','desc')
             ->paginate(10);

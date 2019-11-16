@@ -37,8 +37,4 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 @endsection
-=======
-@endsection
->>>>>>> account-activation-password-resets
