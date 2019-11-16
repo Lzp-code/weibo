@@ -8,10 +8,12 @@ use Auth;
 
 class StaticPagesController extends Controller
 {
+    //home页面，即本项目的weibo.test的初始页面
     public function home()
     {
         $feed_items = [];
         if (Auth::check()) {
+            //如果用户已登录，Auth::user()获取登录用户的信息，调用User模型的feed方法，获取已关注用户的微博
             $feed_items = Auth::user()->feed()->paginate(30);
         }
 

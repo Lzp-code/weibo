@@ -9,6 +9,8 @@ use Auth;
 class StatusesController extends Controller
 {
         public function __construct(){
+
+            //借助中间件来添加过滤请求：使用本控制器的方程的都必须是已登录用户
             $this->middleware('auth');
         }
 
@@ -17,6 +19,7 @@ class StatusesController extends Controller
             'content'=>'required|max:140'
         ]);
 
+        //Aust::user()获取当前登录的用户
         Auth::user()->statuses()->create([
             'content'=>$request['content']
         ]);
@@ -25,6 +28,7 @@ class StatusesController extends Controller
     }
 
     public function destroy(Status $status){
+        //调用StatusPolicy里面的destroy方法，判断该用户是否可以删除此$status
         $this->authorize('destroy',$status);
         $status->delete();
         session()->flash('success', '微博已被成功删除！');
