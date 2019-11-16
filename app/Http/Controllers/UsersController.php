@@ -63,7 +63,6 @@ class UsersController extends Controller
             'email'=>$request->email,
             'password'=>bcrypt($request->password),
         ]);
-
         //如果要发邮件（注意顶部加载use Mail）；发送完毕后用户点击链接（views\emails\confirm.blade.php，指定点击后要执行的路由），并在routes\web.php指定此路由指向的方法
         //如本项目指定user控制器里面的confirmEmail方法
         $this->sendEmailConfirmationTo($user);
@@ -137,9 +136,7 @@ class UsersController extends Controller
         if($request->password){
             $data['password'] = bcrypt($request->password);
         }
-
         $user->update($data);
-
        session()->flash('success','个人资料更新成功！');
 
         //$user是User模型的对象实例，route方法自动获取User模型的主键，以下代码相当于redirect()->route('users.show', [$user->id]);

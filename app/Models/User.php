@@ -50,11 +50,15 @@ class User extends Authenticatable
     //boot会在模型类完成初始化之后进行加载
     public static function boot(){
         parent::boot();
-        //creating方法在模型被创建前对事件进行监听，并在事件被触发时执行操作
-        //（created方法用于模型被创建后对事件进行监听）
+//        Eloquent 模型触发几个事件，允许你挂接到模型生命周期的如下节点
+//        ： retrieved、creating、created、updating、updated、saving、saved、deleting、deleted、restoring 和 restored。
+//        事件允许你每当特定模型保存或更新数据库时执行代码。每个事件通过其构造器接受模型实例。
+//        retrieved 事件在现有模型从数据库中查找数据时触发。当新模型每一次保存时，creating 和 created 事件被触发。
+//        如果数据库中已经存在模型并且调用了 save 方法，updating / updated 事件被触发。这些情况下，saving / saved 事件也被触发。
         static::creating(function($user){
            $user->activation_token  = Str::random(10); //在模型被创建前给用户生成激活令牌（给用户数据库字段一个activation_token的值）
         });
+
     }
 
 
