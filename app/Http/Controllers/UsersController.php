@@ -64,7 +64,8 @@ class UsersController extends Controller
             'password'=>bcrypt($request->password),
         ]);
 
-        //如果要发邮件：
+        //如果要发邮件（注意顶部加载use Mail）；发送完毕后用户点击链接（views\emails\confirm.blade.php，指定点击后要执行的路由），并在routes\web.php指定此路由指向的方法
+        //如本项目指定user控制器里面的confirmEmail方法
         $this->sendEmailConfirmationTo($user);
         session()->flash('success', '验证邮件已发送到你的注册邮箱上，请注意查收。');
         return redirect('/');
@@ -90,9 +91,14 @@ class UsersController extends Controller
         });
     }
 
+
+    //用户点击激活账户的链接，进入此方法
     public function confirmEmail($token){
+
+        //在数据库里找到与用户激活链接所携带的token匹配的第一个用户
         $user = User::where('activation_token',$token)->firstOrFail();
 
+        //activated设置为1，清空用户之前的的activation_token
         $user->activated  = true;
         $user->activation_token = null;
         $user->save();

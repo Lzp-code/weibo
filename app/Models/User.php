@@ -47,10 +47,13 @@ class User extends Authenticatable
 
     }
 
+    //boot会在模型类完成初始化之后进行加载
     public static function boot(){
         parent::boot();
+        //creating方法在模型被创建前对事件进行监听，并在事件被触发时执行操作
+        //（created方法用于模型被创建后对事件进行监听）
         static::creating(function($user){
-           $user->activation_token  = Str::random(10);
+           $user->activation_token  = Str::random(10); //在模型被创建前给用户生成激活令牌（给用户数据库字段一个activation_token的值）
         });
     }
 
