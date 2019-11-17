@@ -70,6 +70,7 @@ class User extends Authenticatable
 
 
     public function statuses(){
+        //hasMany表示一对多的关系
         return $this->hasMany(Status::class);
     }
 
@@ -82,6 +83,13 @@ class User extends Authenticatable
 
     //获取粉丝列表
     public function followers(){
+        //belongsToMany表示多对多的关系
+        //laravel会将两个关联模型的名称进行合并，并按照字母排序。
+        //如这里的：在user模型中关联user模型：$this->belongsToMany(User::Class);
+        //上次的关联关系表名为user_user，我们自定义把关联表名改为'followers'
+        //并且通过传递额外参数至belongsToMany方法来自定义'followers'表里面的字段名称
+        //'user_id'是定义在关联中的模型外键名，（这里是指用户自己）
+        //'follower_id'的要合并的模型外键名（这里指关注我们的人）
         return $this->belongsToMany(User::class,'followers','user_id','follower_id');
     }
 
@@ -94,6 +102,8 @@ class User extends Authenticatable
         if(!is_array($user_ids)){
             $user_ids = compact('user_ids');
         }
+        //sync方法接收两个参数
+        //一个是要进行添加的id，一个是是否移除其他不包含在要添加的关联的id数组中的id，false表示不移除
         $this->followings()->sync($user_ids,false);
     }
 
@@ -104,7 +114,10 @@ class User extends Authenticatable
         $this->followings()->detach($user_ids);
     }
 
+
+    //判断当前登录的用户是否有关注用户$user_id
     public function isFollowing($user_id){
+        //实现的方法是判断用户$user_id是否在当前用户的关注人列表上
         return $this->followings->contains($user_id);
     }
 
